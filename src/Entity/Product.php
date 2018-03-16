@@ -27,6 +27,27 @@ class Product
     private $image;
 
     /**
+     * @return mixed
+     */
+    public function getRefCode()
+    {
+        return $this->ref_code;
+    }
+
+    /**
+     * @param mixed $ref_code
+     */
+    public function setRefCode($ref_code)
+    {
+        $this->ref_code = $ref_code;
+    }
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $ref_code;
+
+    /**
      * @ORM\Column(type="float")
      */
     private $price;

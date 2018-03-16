@@ -18,6 +18,7 @@ class ProductType extends AbstractType
             ->add('description')
         ->add('image')
         ->add('price')
+            ->add('ref_code')
         ->add('category', EntityType::class, [
                   // list objects from this class
                   'class' => 'App:Category',
